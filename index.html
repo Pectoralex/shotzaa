@@ -1,0 +1,299 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shotzza | Pizza + Shots</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="brand">
+        <div class="brand-icon" aria-hidden="true">
+          <img src="assets/logo.png" alt="Logo de Shotzza" />
+          <span>SZ</span>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">SHOTZZA</span>
+          <span class="brand-tag">Pizza + shots infusionados</span>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#menu">Menú</a>
+        <a href="#shots">Shots</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a class="cta small" href="#contacto">Reservar</a>
+    </header>
+
+    <main>
+      <section class="hero" id="experiencia">
+        <div class="hero-copy">
+          <div class="badge">Nuevo en la ciudad</div>
+          <h1>Shotzza: pizzas con alcohol que saben a fiesta.</h1>
+          <p>
+            Un espacio minimalista y juvenil donde cada pizza lleva un shot diferente en la salsa,
+            el glaze o el topping. Elige tu mood y arma tu combo.
+          </p>
+          <div class="hero-actions">
+            <a class="cta" href="#menu">Ver menú</a>
+            <a class="ghost" href="#shots">Explorar shots</a>
+          </div>
+          <div class="hero-meta">
+            <span>+18 solamente</span>
+            <span>Infusiones artesanales</span>
+            <span>Delivery nocturno</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h2>Elige tu vibe</h2>
+          <ul>
+            <li>Tequila • cítrica y picante</li>
+            <li>Ron • dulce y ahumada</li>
+            <li>Gin • fresca y herbal</li>
+            <li>Whisky • intensa y caramelizada</li>
+          </ul>
+          <div class="hero-note">Cada receta usa un alcohol distinto y balanceado.</div>
+        </div>
+      </section>
+
+      <section class="menu" id="menu">
+        <div class="section-head">
+          <div>
+            <h2>Menú Shotzza</h2>
+            <p>
+              Selecciona pizzas con alcohol y mezcla sabores. Todas las opciones son +18 y
+              contienen alcohol real.
+            </p>
+          </div>
+          <div class="legend">
+            <span class="dot dot-red"></span>
+            <span>Alcohol infusionado</span>
+          </div>
+        </div>
+
+        <div class="filters">
+          <button class="chip active" data-filter="all">Todos</button>
+          <button class="chip" data-filter="tequila">Tequila</button>
+          <button class="chip" data-filter="ron">Ron</button>
+          <button class="chip" data-filter="gin">Gin</button>
+          <button class="chip" data-filter="whisky">Whisky</button>
+          <button class="chip" data-filter="vermut">Vermut</button>
+          <button class="chip" data-filter="amaretto">Amaretto</button>
+        </div>
+
+        <div class="menu-layout">
+          <div class="menu-grid">
+            <article class="pizza-card" data-alcohol="tequila" data-price="14">
+              <div class="card-head">
+                <h3>Fuego Lima</h3>
+                <span class="price">$14</span>
+              </div>
+              <p>
+                Salsa de tomate, pepperoni crujiente, jalapeño, glaze de tequila y lima.
+              </p>
+              <div class="card-tags">
+                <span class="tag tag-alcohol">Tequila</span>
+                <span class="tag">Picante</span>
+              </div>
+              <label class="select">
+                <input
+                  type="checkbox"
+                  class="select-pizza"
+                  data-name="Fuego Lima"
+                  data-price="14"
+                  data-alcohol="Tequila"
+                />
+                <span>Agregar a la orden</span>
+              </label>
+            </article>
+
+            <article class="pizza-card" data-alcohol="ron" data-price="13">
+              <div class="card-head">
+                <h3>Caribe Nocturno</h3>
+                <span class="price">$13</span>
+              </div>
+              <p>
+                Queso fundido, piña asada, tocino, cebolla morada y reducción de ron.
+              </p>
+              <div class="card-tags">
+                <span class="tag tag-alcohol">Ron</span>
+                <span class="tag">Dulce</span>
+              </div>
+              <label class="select">
+                <input
+                  type="checkbox"
+                  class="select-pizza"
+                  data-name="Caribe Nocturno"
+                  data-price="13"
+                  data-alcohol="Ron"
+                />
+                <span>Agregar a la orden</span>
+              </label>
+            </article>
+
+            <article class="pizza-card" data-alcohol="gin" data-price="15">
+              <div class="card-head">
+                <h3>Jardín Bruma</h3>
+                <span class="price">$15</span>
+              </div>
+              <p>
+                Base blanca, espinaca, ricotta, pepino encurtido y aceite de gin botánico.
+              </p>
+              <div class="card-tags">
+                <span class="tag tag-alcohol">Gin</span>
+                <span class="tag">Herbal</span>
+              </div>
+              <label class="select">
+                <input
+                  type="checkbox"
+                  class="select-pizza"
+                  data-name="Jardín Bruma"
+                  data-price="15"
+                  data-alcohol="Gin"
+                />
+                <span>Agregar a la orden</span>
+              </label>
+            </article>
+
+            <article class="pizza-card" data-alcohol="whisky" data-price="16">
+              <div class="card-head">
+                <h3>Smoky Maple</h3>
+                <span class="price">$16</span>
+              </div>
+              <p>
+                Pulled pork, cheddar ahumado, cebollas caramelizadas y glaze de whisky.
+              </p>
+              <div class="card-tags">
+                <span class="tag tag-alcohol">Whisky</span>
+                <span class="tag">Ahumada</span>
+              </div>
+              <label class="select">
+                <input
+                  type="checkbox"
+                  class="select-pizza"
+                  data-name="Smoky Maple"
+                  data-price="16"
+                  data-alcohol="Whisky"
+                />
+                <span>Agregar a la orden</span>
+              </label>
+            </article>
+
+            <article class="pizza-card" data-alcohol="vermut" data-price="14">
+              <div class="card-head">
+                <h3>Rosso Cítrico</h3>
+                <span class="price">$14</span>
+              </div>
+              <p>
+                Mozzarella fresca, aceitunas negras, tomate confitado y vermut rojo.
+              </p>
+              <div class="card-tags">
+                <span class="tag tag-alcohol">Vermut</span>
+                <span class="tag">Cítrica</span>
+              </div>
+              <label class="select">
+                <input
+                  type="checkbox"
+                  class="select-pizza"
+                  data-name="Rosso Cítrico"
+                  data-price="14"
+                  data-alcohol="Vermut"
+                />
+                <span>Agregar a la orden</span>
+              </label>
+            </article>
+
+            <article class="pizza-card" data-alcohol="amaretto" data-price="15">
+              <div class="card-head">
+                <h3>Almendra After</h3>
+                <span class="price">$15</span>
+              </div>
+              <p>
+                Base cremosa, prosciutto, pera, nuez tostada y reducción de amaretto.
+              </p>
+              <div class="card-tags">
+                <span class="tag tag-alcohol">Amaretto</span>
+                <span class="tag">Gourmet</span>
+              </div>
+              <label class="select">
+                <input
+                  type="checkbox"
+                  class="select-pizza"
+                  data-name="Almendra After"
+                  data-price="15"
+                  data-alcohol="Amaretto"
+                />
+                <span>Agregar a la orden</span>
+              </label>
+            </article>
+          </div>
+
+          <aside class="order-panel" aria-live="polite">
+            <div class="order-head">
+              <h3>Tu orden</h3>
+              <span class="order-count" id="order-count">0</span>
+            </div>
+            <div class="order-list" id="order-list">
+              <p class="empty">Aún no seleccionas pizzas.</p>
+            </div>
+            <div class="order-total">
+              <span>Total</span>
+              <strong id="order-total">$0</strong>
+            </div>
+            <button class="cta full">Confirmar pedido</button>
+            <p class="order-note">Solo para mayores de 18 años.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="shots" id="shots">
+        <div class="section-head">
+          <div>
+            <h2>Shots de la casa</h2>
+            <p>Pequeños, potentes y perfectos para maridar.</p>
+          </div>
+        </div>
+        <div class="shots-grid">
+          <div class="shot-card">
+            <h4>Shot Verde</h4>
+            <p>Tequila, lima, sal negra.</p>
+          </div>
+          <div class="shot-card">
+            <h4>Shot Smoke</h4>
+            <p>Whisky ahumado, maple, naranja.</p>
+          </div>
+          <div class="shot-card">
+            <h4>Shot Garden</h4>
+            <p>Gin, pepino, menta.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contacto">
+        <div class="contact-card">
+          <div>
+            <h2>Shotzza</h2>
+            <p>Av. Principal 2121 • 18:00 a 02:00</p>
+          </div>
+          <a class="ghost" href="mailto:reservas@shotzza.com">Reservar mesa</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 Shotzza. Pizza con alcohol responsable.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
