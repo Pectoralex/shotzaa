@@ -224,7 +224,7 @@ main {
 
 .hero-logo img {
   width: 100%;
-  max-width: 640px;
+  max-width: 720px;
   border: var(--border);
   border-radius: 28px;
   background: var(--sand);
