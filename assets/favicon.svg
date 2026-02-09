@@ -1,0 +1,5 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="SZ">
+  <rect x="6" y="6" width="116" height="116" rx="24" fill="#f9f2df" stroke="#1c1c1c" stroke-width="8" />
+  <text x="64" y="76" text-anchor="middle" font-family="Bungee, 'Arial Black', sans-serif" font-size="56" fill="#1c1c1c">SZ</text>
+  <rect x="28" y="88" width="72" height="8" rx="4" fill="#c43b3b" />
+</svg>
