@@ -55,11 +55,11 @@ body::after {
   position: fixed;
   inset: 0;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' fill='none'%3E%3Cg opacity='0.35' stroke='%23c43b3b' stroke-width='2'%3E%3Cpath d='M32%2032%20L86%2052%20L56%20106%20Z' fill='%23f4b43c' fill-opacity='0.18'/%3E%3Ccircle cx='58' cy='70' r='5' fill='%23c43b3b' fill-opacity='0.18' stroke='none'/%3E%3Ccircle cx='70' cy='84' r='4' fill='%23c43b3b' fill-opacity='0.18' stroke='none'/%3E%3Cpath d='M130%2028%20h28%20v42%20a8%208%200%200%201%20-8%208%20h-12%20a8%208%200%200%201%20-8%20-8%20z' fill='%23c43b3b' fill-opacity='0.08' stroke='%231c1c1c' stroke-opacity='0.12'/%3E%3Cpath d='M134%2040%20h20' stroke='%231c1c1c' stroke-opacity='0.2'/%3E%3Ccircle cx='152' cy='34' r='9' stroke='%239bcf56' stroke-opacity='0.4' fill='none'/%3E%3C/g%3E%3C/svg%3E");
-  background-size: 220px 220px;
-  opacity: 0.25;
+  background-size: 180px 180px;
+  opacity: 0.45;
   pointer-events: none;
   z-index: -1;
-  mix-blend-mode: multiply;
+  mix-blend-mode: normal;
 }
 
 img {
