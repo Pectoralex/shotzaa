@@ -10,7 +10,7 @@
   --shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
   --border: 2px solid var(--ink);
   --radius: 18px;
-  --max-width: 1560px;
+  --max-width: 1720px;
 }
 
 * {
@@ -58,7 +58,7 @@ img {
 main {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 120px 56px 110px;
+  padding: 120px 72px 120px;
 }
 
 .site-header {
@@ -68,7 +68,7 @@ main {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 20px 56px;
+  padding: 20px 72px;
   background: rgba(245, 234, 210, 0.85);
   backdrop-filter: blur(12px);
   border-bottom: var(--border);
@@ -196,11 +196,11 @@ main {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(380px, 1.1fr) minmax(520px, 1.7fr) minmax(340px, 1.1fr);
-  gap: 88px;
+  grid-template-columns: minmax(420px, 1.1fr) minmax(600px, 1.9fr) minmax(360px, 1.1fr);
+  gap: 110px;
   align-items: center;
-  margin-top: 34px;
-  min-height: clamp(600px, 88vh, 840px);
+  margin-top: 40px;
+  min-height: clamp(640px, 90vh, 880px);
 }
 
 .hero-logo {
@@ -212,7 +212,7 @@ main {
 
 .hero-logo img {
   width: 100%;
-  max-width: 580px;
+  max-width: 640px;
   border: var(--border);
   border-radius: 28px;
   background: var(--sand);
@@ -372,16 +372,16 @@ main {
 .menu-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 24px;
+  gap: 32px;
 }
 
 .pizza-card {
   border: var(--border);
   border-radius: var(--radius);
-  padding: 20px;
+  padding: 28px;
   background: #fff;
   display: flex;
-  gap: 24px;
+  gap: 32px;
   align-items: center;
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease;
@@ -398,8 +398,8 @@ main {
 }
 
 .pizza-media {
-  width: 180px;
-  min-width: 180px;
+  width: 240px;
+  min-width: 240px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -407,7 +407,7 @@ main {
 
 .pizza-media img {
   width: 100%;
-  height: 180px;
+  height: 220px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 16px;
@@ -560,7 +560,7 @@ main {
 .site-footer {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 20px 56px 50px;
+  padding: 20px 72px 50px;
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 1px;
