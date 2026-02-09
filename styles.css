@@ -10,7 +10,7 @@
   --shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
   --border: 2px solid var(--ink);
   --radius: 18px;
-  --max-width: 1400px;
+  --max-width: 1560px;
 }
 
 * {
@@ -58,7 +58,7 @@ img {
 main {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 120px 40px 96px;
+  padding: 120px 56px 110px;
 }
 
 .site-header {
@@ -68,7 +68,7 @@ main {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 18px 40px;
+  padding: 20px 56px;
   background: rgba(245, 234, 210, 0.85);
   backdrop-filter: blur(12px);
   border-bottom: var(--border);
@@ -196,11 +196,11 @@ main {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(340px, 1fr) minmax(420px, 1.3fr) minmax(300px, 1fr);
-  gap: 64px;
+  grid-template-columns: minmax(380px, 1.1fr) minmax(520px, 1.7fr) minmax(340px, 1.1fr);
+  gap: 88px;
   align-items: center;
-  margin-top: 28px;
-  min-height: clamp(560px, 85vh, 780px);
+  margin-top: 34px;
+  min-height: clamp(600px, 88vh, 840px);
 }
 
 .hero-logo {
@@ -212,7 +212,7 @@ main {
 
 .hero-logo img {
   width: 100%;
-  max-width: 520px;
+  max-width: 580px;
   border: var(--border);
   border-radius: 28px;
   background: var(--sand);
@@ -274,7 +274,7 @@ main {
 .hero-card {
   border: var(--border);
   border-radius: var(--radius);
-  padding: 24px;
+  padding: 28px;
   background: #fff8e6;
   box-shadow: var(--shadow);
 }
@@ -560,7 +560,7 @@ main {
 .site-footer {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 20px 40px 50px;
+  padding: 20px 56px 50px;
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 1px;
