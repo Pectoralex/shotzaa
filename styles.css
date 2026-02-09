@@ -371,8 +371,8 @@ main {
 
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 22px;
+  grid-template-columns: 1fr;
+  gap: 24px;
 }
 
 .pizza-card {
@@ -381,7 +381,8 @@ main {
   padding: 20px;
   background: #fff;
   display: flex;
-  gap: 20px;
+  gap: 24px;
+  align-items: center;
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease;
 }
@@ -397,8 +398,8 @@ main {
 }
 
 .pizza-media {
-  width: 150px;
-  min-width: 150px;
+  width: 180px;
+  min-width: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -406,10 +407,9 @@ main {
 
 .pizza-media img {
   width: 100%;
-  height: auto;
+  height: 180px;
   aspect-ratio: 1 / 1;
-  max-height: 170px;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 16px;
   border: var(--border);
   background: #fff;
