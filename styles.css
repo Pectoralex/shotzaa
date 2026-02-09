@@ -10,7 +10,7 @@
   --shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
   --border: 2px solid var(--ink);
   --radius: 18px;
-  --max-width: 1120px;
+  --max-width: 1280px;
 }
 
 * {
@@ -58,7 +58,7 @@ img {
 main {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 120px 24px 80px;
+  padding: 120px 32px 90px;
 }
 
 .site-header {
@@ -68,7 +68,7 @@ main {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 16px 24px;
+  padding: 18px 32px;
   background: rgba(245, 234, 210, 0.85);
   backdrop-filter: blur(12px);
   border-bottom: var(--border);
@@ -196,11 +196,11 @@ main {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(260px, 420px) minmax(320px, 1.1fr) minmax(240px, 320px);
-  gap: 36px;
+  grid-template-columns: minmax(300px, 480px) minmax(360px, 1.2fr) minmax(280px, 360px);
+  gap: 48px;
   align-items: center;
-  margin-top: 32px;
-  min-height: clamp(520px, 85vh, 760px);
+  margin-top: 28px;
+  min-height: clamp(560px, 85vh, 780px);
 }
 
 .hero-logo {
@@ -212,11 +212,11 @@ main {
 
 .hero-logo img {
   width: 100%;
-  max-width: 420px;
+  max-width: 460px;
   border: var(--border);
   border-radius: 28px;
   background: var(--sand);
-  padding: 8px;
+  padding: 10px;
   box-shadow: var(--shadow);
 }
 
@@ -371,17 +371,17 @@ main {
 
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 22px;
 }
 
 .pizza-card {
   border: var(--border);
   border-radius: var(--radius);
-  padding: 18px;
+  padding: 20px;
   background: #fff;
   display: flex;
-  gap: 16px;
+  gap: 20px;
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease;
 }
@@ -397,8 +397,8 @@ main {
 }
 
 .pizza-media {
-  width: 120px;
-  min-width: 120px;
+  width: 150px;
+  min-width: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -406,12 +406,13 @@ main {
 
 .pizza-media img {
   width: 100%;
-  height: 100%;
-  max-height: 140px;
-  object-fit: cover;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  max-height: 170px;
+  object-fit: contain;
   border-radius: 16px;
   border: var(--border);
-  background: var(--sand);
+  background: #fff;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
 }
 
@@ -559,7 +560,7 @@ main {
 .site-footer {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 20px 24px 50px;
+  padding: 20px 32px 50px;
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 1px;
