@@ -196,26 +196,31 @@ main {
 
 .hero {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 32px;
+  grid-template-columns: minmax(260px, 420px) 1fr;
+  gap: 40px;
   align-items: center;
   margin-top: 40px;
 }
 
 .hero-logo {
-  grid-column: 1 / -1;
+  grid-column: 1;
   display: flex;
-  justify-content: center;
-  margin-bottom: 8px;
+  justify-content: flex-start;
+  align-self: center;
 }
 
 .hero-logo img {
-  width: min(360px, 80vw);
+  width: min(460px, 85vw);
   border: var(--border);
   border-radius: 28px;
   background: var(--sand);
   padding: 8px;
   box-shadow: var(--shadow);
+}
+
+.hero-copy,
+.hero-card {
+  grid-column: 2;
 }
 
 .badge {
@@ -549,6 +554,19 @@ main {
   .contact-card {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-logo {
+    justify-content: center;
+  }
+
+  .hero-copy,
+  .hero-card {
+    grid-column: 1;
   }
 }
 
