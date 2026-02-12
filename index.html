@@ -101,7 +101,7 @@
               <div class="pizza-info">
                 <div class="card-head">
                   <h3>Fuego Lima</h3>
-                  <span class="price">$14</span>
+                  <span class="price">€14</span>
                 </div>
                 <p>
                   Salsa de tomate, pepperoni crujiente, jalapeño, glaze de tequila y lima.
@@ -130,7 +130,7 @@
               <div class="pizza-info">
                 <div class="card-head">
                   <h3>Caribe Nocturno</h3>
-                  <span class="price">$13</span>
+                  <span class="price">€13</span>
                 </div>
                 <p>
                   Queso fundido, piña asada, tocino, cebolla morada y reducción de ron.
@@ -159,7 +159,7 @@
               <div class="pizza-info">
                 <div class="card-head">
                   <h3>Jardín Bruma</h3>
-                  <span class="price">$15</span>
+                  <span class="price">€15</span>
                 </div>
                 <p>
                   Base blanca, espinaca, ricotta, pepino encurtido y aceite de gin botánico.
@@ -188,7 +188,7 @@
               <div class="pizza-info">
                 <div class="card-head">
                   <h3>Smoky Maple</h3>
-                  <span class="price">$16</span>
+                  <span class="price">€16</span>
                 </div>
                 <p>
                   Pulled pork, cheddar ahumado, cebollas caramelizadas y glaze de whisky.
@@ -217,7 +217,7 @@
               <div class="pizza-info">
                 <div class="card-head">
                   <h3>Rosso Cítrico</h3>
-                  <span class="price">$14</span>
+                  <span class="price">€14</span>
                 </div>
                 <p>
                   Mozzarella fresca, aceitunas negras, tomate confitado y vermut rojo.
@@ -246,7 +246,7 @@
               <div class="pizza-info">
                 <div class="card-head">
                   <h3>Almendra After</h3>
-                  <span class="price">$15</span>
+                  <span class="price">€15</span>
                 </div>
                 <p>
                   Base cremosa, prosciutto, pera, nuez tostada y reducción de amaretto.
@@ -270,6 +270,82 @@
                 <img src="assets/pizzas/almendra-after.png" alt="Pizza Almendra After" />
               </div>
             </article>
+
+            <div class="builder-card" id="custom-builder">
+              <div class="builder-head">
+                <h3>Arma tu pizza</h3>
+                <p>Elige tu base, shot y suma extras. Cada topping incrementa el precio.</p>
+              </div>
+              <div class="builder-grid">
+                <label class="builder-field">
+                  <span>Nombre de tu pizza</span>
+                  <input
+                    type="text"
+                    id="custom-name"
+                    placeholder="Mi combinación Shotzza"
+                    maxlength="32"
+                  />
+                </label>
+                <label class="builder-field">
+                  <span>Base</span>
+                  <select id="custom-base">
+                    <option value="12" data-label="Clásica">Clásica (salsa roja) · €12</option>
+                    <option value="13" data-label="Blanca">Blanca cremosa · €13</option>
+                    <option value="14" data-label="Masa fina">Masa fina crujiente · €14</option>
+                  </select>
+                </label>
+                <label class="builder-field">
+                  <span>Shot infusionado</span>
+                  <select id="custom-shot">
+                    <option value="Tequila">Tequila</option>
+                    <option value="Ron">Ron</option>
+                    <option value="Gin">Gin</option>
+                    <option value="Whisky">Whisky</option>
+                    <option value="Vermut">Vermut</option>
+                    <option value="Amaretto">Amaretto</option>
+                  </select>
+                </label>
+              </div>
+              <div class="builder-extras">
+                <div class="builder-subhead">
+                  <h4>Extras</h4>
+                  <span>+€1,50 por topping</span>
+                </div>
+                <div class="extras-grid">
+                  <label class="extra-option">
+                    <input type="checkbox" class="extra-check" data-name="Pepperoni" data-price="1.5" />
+                    Pepperoni
+                  </label>
+                  <label class="extra-option">
+                    <input type="checkbox" class="extra-check" data-name="Bacon" data-price="1.5" />
+                    Bacon
+                  </label>
+                  <label class="extra-option">
+                    <input type="checkbox" class="extra-check" data-name="Champiñones" data-price="1.5" />
+                    Champiñones
+                  </label>
+                  <label class="extra-option">
+                    <input type="checkbox" class="extra-check" data-name="Cebolla caramelizada" data-price="1.5" />
+                    Cebolla caramelizada
+                  </label>
+                  <label class="extra-option">
+                    <input type="checkbox" class="extra-check" data-name="Trufa" data-price="1.5" />
+                    Trufa
+                  </label>
+                  <label class="extra-option">
+                    <input type="checkbox" class="extra-check" data-name="Piña asada" data-price="1.5" />
+                    Piña asada
+                  </label>
+                </div>
+              </div>
+              <div class="builder-footer">
+                <div class="builder-price">
+                  <span>Total de tu pizza</span>
+                  <strong id="custom-total">€12</strong>
+                </div>
+                <button class="cta" id="add-custom" type="button">Agregar personalizada</button>
+              </div>
+            </div>
           </div>
 
           <aside class="order-panel" aria-live="polite">
@@ -282,7 +358,7 @@
             </div>
             <div class="order-total">
               <span>Total</span>
-              <strong id="order-total">$0</strong>
+              <strong id="order-total">€0</strong>
             </div>
             <button class="cta full">Confirmar pedido</button>
             <p class="order-note">Solo para mayores de 18 años.</p>
