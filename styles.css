@@ -350,22 +350,17 @@ main {
 
 .menu {
   margin-top: 70px;
-  position: relative;
-  padding-top: 46px;
 }
 
-.menu::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 32px;
+.menu-checker {
+  width: 100%;
+  height: 34px;
+  margin-bottom: 26px;
   background:
     linear-gradient(90deg, var(--gold) 25%, var(--sand) 25%, var(--sand) 50%, var(--gold) 50%, var(--gold) 75%, var(--sand) 75%);
-  background-size: 80px 32px;
-  border-top: var(--border);
-  border-bottom: var(--border);
+  background-size: 80px 34px;
+  border: var(--border);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.08);
 }
 
 .filters {
