@@ -17,6 +17,7 @@ const orderCount = document.getElementById('order-count');
 const customName = document.getElementById('custom-name');
 const customBase = document.getElementById('custom-base');
 const customShot = document.getElementById('custom-shot');
+const customSauce = document.getElementById('custom-sauce');
 const customTotal = document.getElementById('custom-total');
 const addCustomButton = document.getElementById('add-custom');
 const extraCheckboxes = document.querySelectorAll('.extra-check');
@@ -107,7 +108,7 @@ const updateOrder = () => {
       createOrderRow(
         {
           ...item,
-          meta: `Base: ${item.base} · Extras: ${extrasLabel}`,
+          meta: `Base: ${item.base} · Salsa: ${item.sauce || 'Sin salsa'} · Extras: ${extrasLabel}`,
         },
         true
       )
@@ -197,7 +198,7 @@ extraCheckboxes.forEach((extra) => {
 
 if (addCustomButton) {
   addCustomButton.addEventListener('click', () => {
-    if (!customBase || !customShot) {
+    if (!customBase || !customShot || !customSauce) {
       return;
     }
 
@@ -206,6 +207,7 @@ if (addCustomButton) {
     const nameValue = customName ? customName.value.trim() : '';
     const displayName = nameValue || `Pizza personalizada ${customIndex}`;
     const id = `custom-${Date.now()}-${customIndex}`;
+    const sauceValue = customSauce.value;
 
     customIndex += 1;
 
@@ -215,6 +217,7 @@ if (addCustomButton) {
       price: base.price + extrasTotal,
       alcohol: customShot.value,
       base: base.label,
+      sauce: sauceValue,
       extras,
     });
 
